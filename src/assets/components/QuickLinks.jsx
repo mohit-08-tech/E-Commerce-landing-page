@@ -3,12 +3,12 @@ import React from "react";
 
 const QuickLinks = () => {
   const QuickNavLinks = [
-    { name: "Hot Deals", value: "HotDeals",imageUrl:"../images/hotdeals.png" },
-    { name: "Smartphones", value: "Smartphones", imageUrl:"../images/smartphones.webp" },
-    { name: "Laptops", value: "Laptops",imageUrl:"../images/laptop.png"  },
-    { name: "Clothing", value: "Clothing",imageUrl:"../images/clothing.jpg"  },
-    { name: "Sports", value: "Sports",imageUrl:"../images/sports.webp"  },
-    { name: "Travel", value: "Travel",imageUrl:"../images/travel.png"  },
+    { name: "Hot Deals", value: "HotDeals",imageUrl:"../images/QuickNavLinks/hotdeals.png" },
+    { name: "Smartphones", value: "Smartphones", imageUrl:"../images/QuickNavLinks/smartphones.webp" },
+    { name: "Laptops", value: "Laptops",imageUrl:"../images/QuickNavLinks/laptop.png"  },
+    { name: "Clothing", value: "Clothing",imageUrl:"../images/QuickNavLinks/clothing.jpg"  },
+    { name: "Sports", value: "Sports",imageUrl:"../images/QuickNavLinks/sports.webp"  },
+    { name: "Travel", value: "Travel",imageUrl:"../images/QuickNavLinks/travel.png"  },
 
   ];
 
