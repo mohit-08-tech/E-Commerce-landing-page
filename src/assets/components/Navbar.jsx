@@ -50,7 +50,7 @@ const Navbar = () => {
  
 
   return (
-      <nav className="shadow-md w-full top-0 left-0 mb-2">
+      <nav className="shadow-md w-full top-0 left-0 ">
         <div className="md:flex items-center justify-between bg-white py-3 md:px-10 px-7">
           {/* logo section */}
           <Link to='/home' className="font-extrabold text-2xl cursor-pointer flex items-center gap-1">
@@ -70,19 +70,19 @@ const Navbar = () => {
           {/* linke items */}
           <ul
             className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto  left-0 w-full 
-            md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in
+            md:w-auto md:pl-0 pl-9 transition-all duration-300 ease-in z-50
             ${open ? "top-18" : "top-[-490px]"}
             ${isMobile ? "shadow-md rounded-md" : ""}
             `}
           >
             
             <li className="group">
-              <div href="#" class="md:ml-8 md:my-0 my-7 font-semibold text-gray-800 cursor-pointer hover:text-blue-400 duration-500 hover:text-xl" 
+              <div href="#" class="md:ml-8 md:my-0 my-7 font-semibold text-gray-800 cursor-pointer hover:text-blue-400 duration-300 hover:text-xl" 
                 onClick={()=>{setIsCategoryExpanded(!isCategoryExpanded)}}>
                 CATEGORY  {isCategoryExpanded ?<ChevronUpIcon className='w-6 h-6 inline font-bold'/>: <ChevronDownIcon className='w-6 h-6 inline font-bold'/>}
               </div>
               <div className={`${isCategoryExpanded?"block":"hidden"} ${!isMobile?"absolute":""}
-               mt-2 bg-white border rounded-md`}>
+               mt-2 bg-white border rounded-md z-50`}>
                 {SubCategoryLinks.map((item)=>(
                   <Link to={item.link} className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
                     {item.name}
@@ -93,7 +93,7 @@ const Navbar = () => {
 
             {Links.map((item) => (
               <li className="md:ml-8 md:my-0 my-7 font-semibold">
-                <Link to={item.link} className="text-gray-800 hover:text-blue-400 duration-500 hover:text-xl">
+                <Link to={item.link} className="text-gray-800 hover:text-blue-400 duration-300 hover:text-xl">
                  {item.name}  {item.icon}
                 </Link>
               </li>
@@ -101,13 +101,13 @@ const Navbar = () => {
 
             {isMobile?
               <li className="md:ml-8 md:my-0 my-7 font-semibold">
-                <Link to={UserAccountLink} className="text-gray-800 hover:text-blue-400 duration-500 hover:text-xl">
+                <Link to={UserAccountLink} className="text-gray-800 hover:text-blue-400 duration-300 hover:text-xl">
                 <UserCircleIcon className="w-6 h-6 inline"/> My Account
                 </Link>
               </li>:""
             }
             {!isMobile?
-                <Link to={UserAccountLink} className="w-7 h-7 md:ml-8 cursor-pointer duration-500 md:static flex 
+                <Link to={UserAccountLink} className="w-7 h-7 md:ml-8 cursor-pointer duration-300 md:static flex 
                 justify-center relative" title="My Account">
                     <UserCircleIcon/>
                 </Link>

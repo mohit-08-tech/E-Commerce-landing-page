@@ -1,5 +1,4 @@
 import React from "react";
-import { Carousel } from "@material-tailwind/react";
 
 
 const QuickLinks = () => {
@@ -31,7 +30,6 @@ const QuickLinks = () => {
               </div>
             ))
           }
-
         </div>
       </div>
     </>
