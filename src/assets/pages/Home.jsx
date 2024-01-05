@@ -1,6 +1,7 @@
 import React from 'react'
-import QuickLinks from '../components/QuickLinks'
 import Carousel from '../components/Carousel'
+import QuickLinks from '../components/QuickLinks'
+import BestDeals from '../components/BestDeals';
 
 const CaraouselImages = [
   '../images/Caraousel/Smartphones.jpg',
@@ -13,6 +14,7 @@ const Home = () => {
     <div className='w-full'>
       <Carousel images={CaraouselImages} />
       <QuickLinks/>
+      <BestDeals/>
     </div>
   )
 }

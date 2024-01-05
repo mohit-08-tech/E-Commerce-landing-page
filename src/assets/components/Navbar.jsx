@@ -84,7 +84,7 @@ const Navbar = () => {
               <div className={`${isCategoryExpanded?"block":"hidden"} ${!isMobile?"absolute":""}
                mt-2 bg-white border rounded-md z-50`}>
                 {SubCategoryLinks.map((item)=>(
-                  <Link to={item.link} className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+                  <Link key={item.link} to={item.link} className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
                     {item.name}
                     </Link>
                 ))}

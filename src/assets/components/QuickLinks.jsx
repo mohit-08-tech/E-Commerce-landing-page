@@ -14,11 +14,11 @@ const QuickLinks = () => {
 
   return (
     <>
-      <div className="flex flex-wrap m-5  flex-col ">
+      <div className="flex flex-wrap mx-5 mt-10 mb-20  flex-col px-6">
         <div className="font-extrabold text-3xl mb-6">
           <h1>Shop Our Top Categories</h1>  
         </div>
-        <div className="flex flex-wrap gap-4 flex-row">
+        <div className="flex flex-wrap gap-5 flex-row">
           {
             QuickNavLinks.map((item)=>(
               <div 
